@@ -35,3 +35,31 @@
 	background-color: #e89380;
 	/*orange*/
 }
+
+.transition .b1 {
+	/* transition-property: background-color, border-radius;
+	transition-duration: 1s; */
+
+	/* transition-property: border-radius;
+	transition-duration: 1s; */
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
+}
+
+.transition .b1:hover {
+	background-color: black;
+	border-radius: 50%;
+}
+
+.transition .b2 {
+	transition-property: width;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(1,.96,.09,1.49);
+	/* transition-timing-function: cubic-bezier(0.55, 0, 1, 0.45); */
+}
+
+.transition .b2:hover {
+	width: 500px;
+}
